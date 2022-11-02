@@ -1,0 +1,33 @@
+[System]
+Name='fanfuzz'
+Type='mamdani'
+Version=2.0
+NumInputs=1
+NumOutputs=1
+NumRules=3
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='room_temperature'
+Range=[35.8 38]
+NumMFs=3
+MF1='comfortable_cool':'trimf',[34.94 35.82 36.46]
+MF2='comfortably':'trimf',[36.44 36.9 36.92]
+MF3='comfortably_warm':'trimf',[36.92 37.91 38.88]
+
+[Output1]
+Name='fan_speed'
+Range=[0 255]
+NumMFs=3
+MF1='slow':'trimf',[-102 0 113.670634920635]
+MF2='mid':'trimf',[95.1 112 206.09126984127]
+MF3='high':'trimf',[153 255 357]
+
+[Rules]
+1, 1 (1) : 1
+2, 2 (1) : 1
+3, 3 (1) : 1
