@@ -9,4 +9,8 @@ reference wikipedia :
 
 ![room temperature](https://github.com/proflamyt/AutoFan/blob/main/temperature%20in%20nigeria.png)
 
+![AutoFan](https://github.com/proflamyt/AutoFan/blob/main/autofan.jpg)
+![AutoFan2](https://github.com/proflamyt/AutoFan/blob/main/auto%20fan2.jpg)
+
+
 
